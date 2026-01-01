@@ -1,0 +1,18 @@
+[Unit]
+Description=SnakeEye GUI (Qt)
+After=graphical-session.target
+Wants=graphical-session.target
+
+[Service]
+Type=simple
+Environment=DISPLAY=:0
+Environment=XAUTHORITY=/home/pi/.Xauthority
+WorkingDirectory=/opt/snakeeye
+ExecStart=/opt/snakeeye/bin/snakeye
+Restart=always
+RestartSec=2
+StandardOutput=append:/var/log/snakeeye_gui.log
+StandardError=append:/var/log/snakeeye_gui.log
+
+[Install]
+WantedBy=multi-user.target
