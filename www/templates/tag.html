@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Raspberry pi | Tag</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../static/css/loader.css">
+  <link rel="stylesheet" href="../static/css/css-style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+
+  
+  <script type="text/javascript" src="/static/js/jquery.min.js"></script>
+  <script type="text/javascript" src="/static/js/main.js"></script>
+
+<style type="text/css">
+  .right_option{height: 97%;}
+  #sidebar {min-width: 170px;}
+  .right_option{margin: 20px 40px;}
+</style>
+
+</head>
+
+<body>
+   <!-- Modal -->
+<div class="custom-m modal right fade" id="USBModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="modal-header custom-close">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel2">USB</h4>
+      </div>
+
+      <div class="modal-body btooth_sec">        
+          <p class="sec_subtitle">AVAILABLE DEVICES</p>
+          <p><i class="fa fa-usb"></i> Device one </p>
+          <p><i class="fa fa-usb"></i> Device two </p>
+          <p><i class="fa fa-usb"></i> Device three </p>    
+          <p><i class="fa fa-usb"></i> Device four </p>  
+          <p><i class="fa fa-usb"></i> Device five </p>      
+      </div>
+    </div><!-- modal-content -->
+  </div><!-- modal-dialog -->
+</div><!-- modal -->
+
+<!-- Modal -->
+<div class="custom-m modal right fade" id="DeviceModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="modal-header custom-close">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel2">Device</h4>
+      </div>
+
+      <div class="modal-body btooth_sec">        
+          <p class="sec_subtitle">NETWORKS</p>
+          <p><i class="fa fa-wifi"></i> Device one </p>
+          <p><i class="fa fa-wifi"></i> Device two </p>
+          <p><i class="fa fa-wifi"></i> Device three </p>    
+          <p><i class="fa fa-wifi"></i> Device four </p>  
+          <p><i class="fa fa-wifi"></i> Device five </p>      
+      </div>
+    </div><!-- modal-content -->
+  </div><!-- modal-dialog -->
+</div><!-- modal -->
+
+<!-- Modal -->
+<div class="custom-m modal right fade" id="BluetoothModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="modal-header custom-close">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel2">Bluetooth</h4>
+      </div>
+
+      <div class="modal-body btooth_sec">
+        
+          <p class="sec_subtitle">AVAILABLE DEVICES</p>
+          <p><i class="fa fa-bluetooth-b"></i> Device One </p>
+          <p><i class="fa fa-bluetooth-b"></i> Device Two </p>
+          <p><i class="fa fa-bluetooth-b"></i> Device Three </p>  
+          <p><i class="fa fa-bluetooth-b"></i> Device Four </p>
+          <p><i class="fa fa-bluetooth-b"></i> Device Five </p>     
+                 
+      </div>
+    </div><!-- modal-content -->
+  </div><!-- modal-dialog -->
+</div><!-- modal -->
+
+<!-- Modal -->
+<div class="custom-m modal right fade" id="WiFiModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="modal-header custom-close">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel2">Wi-Fi</h4>
+      </div>
+
+      <div class="modal-body btooth_sec">
+    
+          <p class="sec_subtitle">WI-FI NETWORKS</p>
+          <p><i class="fa fa-wifi"></i> Snake Eye </p>
+          <p><i class="fa fa-wifi"></i> JioFiber-PLS2B </p>
+          <p><i class="fa fa-wifi"></i> Crucial </p>           
+      </div>
+    </div><!-- modal-content -->
+  </div><!-- modal-dialog -->
+</div><!-- modal -->
+
+  <div class="wrapper align-items-stretch">
+    <nav id="sidebar">
+       <div class="right_option">
+      <ul class="list-unstyled left-ul components mb-5">
+        <li class="menu_ico"><a href="index_new.html"><img width="35px" src="images/back.svg"></a></li>
+        <li class="hide_opt led_control">
+          <a href="javascript:void(0)"><img width="32px" src="images/crop.svg"></a></li>
+        <!-- <li>
+          <a href="javascript:void(0)"><img src="images/device.svg"></a>
+        </li> -->
+        <li class="hide_opt opt_hide">
+          <a href="javascript:void(0)"><img width="26px" src="images/audio.svg"></a>
+        </li>
+        <li class="settings_ico" style="display: none;">
+          <a href="javascript:void(0)"><img width="26px" src="images/upload.svg"></a>
+        </li>
+        <li class="hide_opt opt_hide">
+          <a href="javascript:void(0)"><img width="26px" src="images/delete.svg"></a>
+        </li>
+        <li class="hide_opt opt_hide">
+          <a href="javascript:void(0)"><img width="50px" src="images/notes.svg"></a>
+        </li>
+        <li class="hide_opt opt_hide">
+          <a href="javascript:void(0)"><img width="34px" src="images/full-screen.svg"></a>
+        </li>
+        <li class="led_slider" style="display: none;">
+          <form class="range">
+    <div class="form-group range__slider">
+      <input type="range" step="500" min="0" max="100" step="5" value="75">
+    </div><!--/form-group-->
+    <div class="form-group range__value">
+      <!-- <label>Text</label> -->
+      <span></span>            
+    </div><!--/form-group-->
+  </form>
+        </li>
+      </ul>
+    </div>
+
+    
+    
+   
+    </nav>
+
+  <div id="content" class="container" style="max-width: 100% !important;">
+      <div class="row" id="right_sec" style="margin-right:0px;margin-left: 0px;">
+      <ul class="col-md-4 company-details">      
+      <li><img class="logo" width="170px" src="https://plumbingpatrol.com/public/assets/images/logo.png" alt="logo"></li>
+      <li><h3>Plumbing Patrol</h3></li>  
+      <!-- <li class="distance_sec"><p>Distance: 15 Ft. <br>Depth: 20 Ft. </p></li>   -->        
+    </ul>
+    <div class="col-md-8 pull-right">
+    <ul class="right_cont">     
+       <!--  <li class="home_ico"><a href="#"><i class="fa fa-home"></i></a></li> -->
+       <li class="home_ico"><a href="#"><img width="36px" src="images/satellite.svg"></a></li>
+       <li class="" style="margin-right: 25px;"><p><span>Lat:</span> 22.714191284059304<br><span>Long:</span> 75.87191125166424</p></li>
+        <li class="home_ico"><a href="#" data-toggle="modal" data-target="#USBModal"><img width="25px" src="images/pendrive.svg"></a></li>
+        <li class="device_connect"><a href="#" data-toggle="modal" data-target="#DeviceModal"><img width="35px" src="images/device.svg"></a></li>
+        <li class="mobwifi"><a href="#" data-toggle="modal" data-target="#WiFiModal"><img src="images/mob-wifi.svg"></a></li>
+        <li class="bluetooth"><a href="#" data-toggle="modal" data-target="#BluetoothModal"><i class="fa fa-bluetooth-b"></i></a></li>
+        <!-- <li class="home_ico"><a href="#"><img width="36px" src="images/satellite.svg"></a></li> -->
+        <li class="battery"><p><i class="fa fa-battery-half"></i> <br><span style="font-size: 15px;position: relative;top: -6px;">43%</span></p></li>        
+        <li class="dt-sec"><span>31-03-22<br>11:25:35</span></li>        
+        <li><p class="p-by"><!-- <span>Powered by</span> -->Snake Eye</p></li>
+      </ul>
+    </div>
+    </div>
+
+ </div>
+
+<div class="rotate_video" style="bottom: 105px;"><p><img src="images/rotate.svg"></p></div>
+
+ <div class="form-group tag_input">
+        <input type="text" class="form-control" id="CustomText" placeholder="Enter text here...">
+        <img class="tag_close_btn" src="images/close_btn.svg">
+      </div>
+
+<div class="tag_options">
+  <div class="row">
+    <div class="col-md-1">
+      <div class="row">
+        <div class="col-md-6 bold_sec">
+          <p><span>B</span><br>Bold</p>
+        </div>
+        <div class="col-md-6 fill_sec">
+          <p><img width="32px" src="images/background_fill.svg"><br>Fill</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-7 tag_colors">
+      <ul>        
+        <li><a class="white" href="javascript:void(0)"></a></li>
+        <li><a class="black active" href="javascript:void(0)"></a></li>
+        <li><a class="gray" href="javascript:void(0)"></a></li>
+        <li><a class="red" href="javascript:void(0)"></a></li>
+        <li><a class="blue" href="javascript:void(0)"></a></li>
+        <li><a class="yellow" href="javascript:void(0)"></a></li>
+        <li><a class="green" href="javascript:void(0)"></a></li>
+      </ul>
+    </div>
+    <div class="col-md-3"></div>
+    <div class="col-md-1">
+      <div class="row mt-25">
+        <div class="col-md-6 bold_sec">
+          <img width="28px" src="images/close.svg">
+        </div>
+        <div class="col-md-6 fill_sec">
+          <img width="30px" src="images/check.svg">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+
+<script type="text/javascript">
+  
+class Slider {
+  constructor (rangeElement, valueElement, options) {
+    this.rangeElement = rangeElement
+    this.valueElement = valueElement
+    this.options = options
+
+    // Attach a listener to "change" event
+    this.rangeElement.addEventListener('input', this.updateSlider.bind(this))
+  }
+
+  // Initialize the slider
+  init() {
+    this.rangeElement.setAttribute('min', options.min)
+    this.rangeElement.setAttribute('max', options.max)
+    this.rangeElement.value = options.cur
+
+    this.updateSlider()
+  }
+
+  // Format the money
+  asMoney(value) {
+    return '$' + parseFloat(value)
+      .toLocaleString('en-US', { maximumFractionDigits: 2 })
+  }
+
+  generateBackground(rangeElement) {   
+    if (this.rangeElement.value === this.options.min) {
+      return
+    }
+
+    let percentage =  (this.rangeElement.value - this.options.min) / (this.options.max - this.options.min) * 100
+    return 'background: linear-gradient(to right, #ffffff, #ffffff ' + percentage + '%, #555555 ' + percentage + '%, #555555 100%)'
+  }
+
+  updateSlider (newValue) {
+    this.valueElement.innerHTML = this.asMoney(this.rangeElement.value)
+    this.rangeElement.style = this.generateBackground(this.rangeElement.value)
+  }
+}
+
+let rangeElement = document.querySelector('.range [type="range"]')
+let valueElement = document.querySelector('.range .range__value span') 
+
+let options = {
+  min: 2000,
+  max: 75000,
+  cur: 37500
+}
+
+if (rangeElement) {
+  let slider = new Slider(rangeElement, valueElement, options)
+
+  slider.init()
+}
+</script>
+</html>

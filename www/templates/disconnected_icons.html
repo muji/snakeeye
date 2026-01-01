@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Raspberry pi | Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../static/css/loader.css">
+  <link rel="stylesheet" href="../static/css/css-style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+  
+  <script type="text/javascript" src="/static/js/jquery.min.js"></script>
+  <script type="text/javascript" src="/static/js/main.js"></script>
+
+</head>
+
+<body>
+   <!-- Modal -->
+<div class="custom-m modal right fade" id="USBModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="modal-header custom-close">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel2">USB</h4>
+      </div>
+
+      <div class="modal-body btooth_sec">        
+          <p class="sec_subtitle">AVAILABLE DEVICES</p>
+          <p><i class="fa fa-usb"></i> Device one </p>
+          <p><i class="fa fa-usb"></i> Device two </p>
+          <p><i class="fa fa-usb"></i> Device three </p>    
+          <p><i class="fa fa-usb"></i> Device four </p>  
+          <p><i class="fa fa-usb"></i> Device five </p>      
+      </div>
+    </div><!-- modal-content -->
+  </div><!-- modal-dialog -->
+</div><!-- modal -->
+
+  <!-- Modal -->
+<div class="custom-m modal right fade" id="DeviceModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="modal-header custom-close">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel2">Device</h4>
+      </div>
+
+      <div class="modal-body btooth_sec">        
+          <p class="sec_subtitle">NETWORKS</p>
+          <p><i class="fa fa-wifi"></i> Device one </p>
+          <p><i class="fa fa-wifi"></i> Device two </p>
+          <p><i class="fa fa-wifi"></i> Device three </p>    
+          <p><i class="fa fa-wifi"></i> Device four </p>  
+          <p><i class="fa fa-wifi"></i> Device five </p>      
+      </div>
+    </div><!-- modal-content -->
+  </div><!-- modal-dialog -->
+</div><!-- modal -->
+
+<!-- Modal -->
+<div class="custom-m modal right fade" id="BluetoothModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="modal-header custom-close">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel2">Bluetooth</h4>
+      </div>
+
+      <div class="modal-body btooth_sec">
+        
+          <p class="sec_subtitle">AVAILABLE DEVICES</p>
+          <p><i class="fa fa-bluetooth-b"></i> Device One </p>
+          <p><i class="fa fa-bluetooth-b"></i> Device Two </p>
+          <p><i class="fa fa-bluetooth-b"></i> Device Three </p>  
+          <p><i class="fa fa-bluetooth-b"></i> Device Four </p>
+          <p><i class="fa fa-bluetooth-b"></i> Device Five </p>     
+                 
+      </div>
+    </div><!-- modal-content -->
+  </div><!-- modal-dialog -->
+</div><!-- modal -->
+
+<!-- Modal -->
+<div class="custom-m modal right fade" id="WiFiModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="modal-header custom-close">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel2">Wi-Fi</h4>
+      </div>
+
+      <div class="modal-body btooth_sec">
+    
+          <p class="sec_subtitle">WI-FI NETWORKS</p>
+          <p><i class="fa fa-wifi"></i> Snake Eye </p>
+          <p><i class="fa fa-wifi"></i> JioFiber-PLS2B </p>
+          <p><i class="fa fa-wifi"></i> Crucial </p>           
+      </div>
+    </div><!-- modal-content -->
+  </div><!-- modal-dialog -->
+</div><!-- modal -->
+
+  <!-- Modal -->
+
+  <div class="modal bs_modal fade" id="lightsControl" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Lights Control</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- <div class="third">
+        <input type="range" min="-10" max="400" step="2" value="40" data-rangeslider>
+        <div class="output"></div>
+    </div> -->
+
+        <h4 class="mt-30"><img width="35px" src="images/led.svg"> &nbsp;&nbsp;LED lights</h4>
+         <div class="range third" style="margin-top: 25px;">
+    <div class="form-group range__slider">
+      <input type="range" step="500" min="0" max="100" step="5" value="75" data-rangeslider>
+      <div class="output"></div>
+    </div>
+    <div class="form-group range__value">
+      <!-- <label>Text</label> -->
+      <span></span>            
+    </div><!--/form-group-->
+  </div>
+    <h4 class="mt-30"><img width="35px" src="images/brightness-new.svg"> &nbsp;&nbsp;Display lights</h4>
+         <div class="range third" style="margin-top: 25px;">
+    <div class="form-group range__slider">
+      <input type="range" step="500" min="0" max="100" step="5" value="75" data-rangeslider>
+      <div class="output"></div>
+    </div>
+    <div class="form-group range__value">
+      <!-- <label>Text</label> -->
+      <span></span>            
+    </div><!--/form-group-->
+
+  </div>
+ <p>&nbsp;</p>
+  <p></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal bs_modal fade" id="DepthEdit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Depth</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <div class="form-group mt-30">
+        <label for="exampleInputEmail1">Depth in Ft.</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="depth_frm" placeholder="Enter depth">
+      </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal bs_modal fade" id="ResetDistance" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Reset Distance</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <h3 class="para_distance text-center mt-30">Are you sure you want to reset distance? </h3>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary">&nbsp;&nbsp;Yes&nbsp;&nbsp;</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="wrapper align-items-stretch">
+
+    <nav id="sidebar">
+      <div class="right_option">
+      <ul class="list-unstyled left-ul components mb-5">
+        <li class="menu_ico"><a href="javascript:void(0)"><img class="lmenu_imgs" width="44px" src="images/help.svg"></a></li>
+        <li class="hide_opt led_control">
+          <a href="javascript:void(0)" data-toggle="modal" data-target="#lightsControl"><img class="lmenu_imgs" width="44px" src="images/brightness.svg"></a>
+        </li>        
+        <li class="hide_opt opt_hide">
+          <a href="javascript:void(0)"><img width="44px" class="lmenu_imgs" src="images/camera.svg"></a>
+        </li>             
+        <li class="hide_opt opt_hide">
+          <a href="javascript:void(0)"><img width="44px" class="lmenu_imgs" src="images/full-screen.svg"></a>
+        </li>
+       
+      </ul>
+    </div>
+
+      <div class="left_option">
+        <ul class="list-unstyled left-ul components mb-5">
+          <li class="capture_sec">
+            <a href="javascript:void(0)"><img src="images/image-icon.svg"></a></li>
+          <li class="play_vid">
+            <a href="javascript:void(0)"><img src="images/play-video.svg"></a>
+            <br>
+             <a class="mt-30" href="javascript:void(0)"><img width="55px" src="images/capture.svg"></a>
+          </li>
+          <li class="audio_sec">
+            <a href="javascript:void(0)"><img src="images/audio.svg"></a>
+          </li>          
+        </ul>
+    </div>
+
+   <p class="dis_new">Dist.<br><span class="count">15 Ft.</span> &nbsp;<a href="#" data-toggle="modal" data-target="#ResetDistance"><img width="24px" src="images/reset-distance.svg"></a><br><span style="position: relative;top: 12px;">Depth<br><span class="count">20 Ft.</span> &nbsp;<a href="#" data-toggle="modal" data-target="#DepthEdit"><i style="color: #fff;font-size: 22px;" class="fa fa-pencil"></i></a></span></p>
+    </nav>
+
+    <div id="content" class="container" style="max-width: 100% !important;">
+      <div class="row" id="right_sec" style="margin-right:0px;margin-left: 0px;">
+      <ul class="col-md-4 company-details">      
+      <li><img class="logo" width="170px" src="https://plumbingpatrol.com/public/assets/images/logo.png" alt="logo"></li>
+      <li><h3>Plumbing Patrol</h3></li>
+      <!-- <li class="distance_sec"><p>Distance: 15 Ft. <br>Depth: 20 Ft. </p></li>  -->     
+    </ul>
+    <div class="col-md-8 pull-right">
+    <ul class="right_cont">     
+       <!--  <li class="home_ico"><a href="#"><i class="fa fa-home"></i></a></li> -->
+       <li class="home_ico"><a href="#"><img width="38px" src="images/satellite_animate.svg"></a></li>
+       <li class="" style="margin-right: 25px;"><p><span>Lat:</span> 22.714191284059304<br><span>Long:</span> 75.87191125166424</p></li>
+       <li class="home_ico"><a href="#" data-toggle="modal" data-target="#USBModal"><img width="27px" src="images/pendrive_disconnect.svg"></a></li>
+       <li class="device_connect"><a href="#" data-toggle="modal" data-target="#DeviceModal"><img width="35px" src="images/device_disconnect.svg"></a></li>
+       <li class="mobwifi active"><a href="#" data-toggle="modal" data-target="#WiFiModal"><img width="35px" src="images/mob-wifi-disconnect.svg"></a></li>
+       <li class="bluetooth"><a href="#" data-toggle="modal" data-target="#BluetoothModal"><i class="fa fa-bluetooth-b"></i></a></li>
+       <!-- <li class="home_ico"><a href="#"><img width="36px" src="images/satellite.svg"></a></li> -->
+       <li class="battery"><p><i class="fa fa-battery-half"></i> <br><span style="font-size: 15px;position: relative;top: -6px;">43%</span></p></li>        
+       <li class="dt-sec"><span>31-03-22<br>11:25:35</span></li>  
+       <li><p class="p-by"><!-- <span>Powered by</span> -->Snake Eye</p></li>
+      </ul>
+    </div>
+    </div>
+
+ </div>
+
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+
+<script type="text/javascript">
+  
+class Slider {
+  constructor (rangeElement, valueElement, options) {
+    this.rangeElement = rangeElement
+    this.valueElement = valueElement
+    this.options = options
+
+    // Attach a listener to "change" event
+    this.rangeElement.addEventListener('input', this.updateSlider.bind(this))
+  }
+
+  // Initialize the slider
+  init() {
+    this.rangeElement.setAttribute('min', options.min)
+    this.rangeElement.setAttribute('max', options.max)
+    this.rangeElement.value = options.cur
+
+    this.updateSlider()
+  }
+
+  // Format the money
+  asMoney(value) {
+    return '$' + parseFloat(value)
+      .toLocaleString('en-US', { maximumFractionDigits: 2 })
+  }
+
+  generateBackground(rangeElement) {   
+    if (this.rangeElement.value === this.options.min) {
+      return
+    }
+
+    let percentage =  (this.rangeElement.value - this.options.min) / (this.options.max - this.options.min) * 100
+    return 'background: linear-gradient(to right, #0366D6, #0366D6 ' + percentage + '%, #f7f7f7 ' + percentage + '%, #f7f7f7 100%)'
+  }
+
+  updateSlider (newValue) {
+    this.valueElement.innerHTML = this.asMoney(this.rangeElement.value)
+    this.rangeElement.style = this.generateBackground(this.rangeElement.value)
+  }
+}
+
+let rangeElement = document.querySelector('.range [type="range"]')
+let valueElement = document.querySelector('.range .range__value span') 
+
+let options = {
+  min: 2000,
+  max: 75000,
+  cur: 37500
+}
+
+if (rangeElement) {
+  let slider = new Slider(rangeElement, valueElement, options)
+
+  slider.init()
+}
+</script>
+</html>

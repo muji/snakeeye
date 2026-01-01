@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="35" height="24" viewBox="0 0 35 24">
+  <g id="sound-frequency" transform="translate(-44 -285)">
+    <g id="Ellipse_228" data-name="Ellipse 228" transform="translate(44 285)" fill="none" stroke="#fff" stroke-width="2">
+      <ellipse cx="5" cy="12" rx="5" ry="12" stroke="none"/>
+      <ellipse cx="5" cy="12" rx="4" ry="11" fill="none"/>
+    </g>
+    <g id="Ellipse_229" data-name="Ellipse 229" transform="translate(56 285)" fill="none" stroke="#fff" stroke-width="2">
+      <ellipse cx="5" cy="12" rx="5" ry="12" stroke="none"/>
+      <ellipse cx="5" cy="12" rx="4" ry="11" fill="none"/>
+    </g>
+    <g id="Ellipse_230" data-name="Ellipse 230" transform="translate(68 285)" fill="none" stroke="#fff" stroke-width="2">
+      <ellipse cx="5.5" cy="12" rx="5.5" ry="12" stroke="none"/>
+      <ellipse cx="5.5" cy="12" rx="4.5" ry="11" fill="none"/>
+    </g>
+  </g>
+</svg>

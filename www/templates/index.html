@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediaMTX Fullscreen Player</title>
+  <link rel="stylesheet" href="../static/css/loader.css">
+  <link rel="stylesheet" href="../static/css/css-style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      background-color: #000;
+      overflow: hidden;
+    }
+    .wrapper {
+      display: flex;
+      height: 100vh;
+      width: 100vw;
+    }
+    #content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .topbar {
+      flex-shrink: 0;
+    }
+    #videoContainer {
+      flex: 1;
+      position: relative;
+    }
+    #videoElement, #fallbackGif {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border: none;
+      outline: none;
+    }
+    #fallbackGif {
+      display: none;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper align-items-stretch">
+    <nav id="sidebar">
+      <div class="right_option">
+        <ul class="list-unstyled left-ul components mb-5">
+          <li class="menu_ico"><a href="javascript:void(0)" id="btn-help"><img class="lmenu_imgs" width="44px" src="images/help.svg"></a></li>
+          <li class="hide_opt led_control"><a href="javascript:void(0)" id="btn-brightness" data-toggle="modal" data-target="#lightsControl"><img class="lmenu_imgs" width="44px" src="images/brightness.svg"></a></li>
+          <li class="hide_opt opt_hide"><a href="javascript:void(0)" id="btn-camera"><img class="lmenu_imgs" width="44px" src="images/camera.svg"></a></li>
+          <li class="hide_opt opt_hide"><a href="javascript:void(0)" id="btn-fullscreen"><img class="lmenu_imgs" width="44px" src="images/full-screen.svg"></a></li>
+        </ul>
+      </div>
+      <div class="left_option">
+        <ul class="list-unstyled left-ul components mb-5">
+          <li class="capture_sec"><a href="javascript:void(0)" id="btn-image"><img src="images/image-icon.svg"></a></li>
+          <li class="play_vid">
+            <a href="javascript:void(0)" id="btn-play"><img src="images/play-video.svg"></a><br>
+            <a class="mt-30" href="javascript:void(0)" id="btn-record"><img width="55px" src="images/capture.svg"></a>
+          </li>
+          <li class="audio_sec"><a href="javascript:void(0)" id="btn-audio"><img src="images/audio.svg"></a></li>
+        </ul>
+      </div>
+      <p class="dis_new">Dist.<br><span class="count">15 Ft.</span>&nbsp;<a href="#" data-toggle="modal" data-target="#ResetDistance" id="btn-reset-distance"><img width="24px" src="images/reset-distance.svg"></a><br>
+        <span style="position: relative; top: 12px;">Depth<br><span class="count">20 Ft.</span>&nbsp;<a href="#" data-toggle="modal" data-target="#DepthEdit" id="btn-depth-edit"><i class="fa fa-pencil" style="color: #fff; font-size: 22px;"></i></a></span>
+      </p>
+    </nav>
+    <div id="content">
+      <div class="row" id="right_sec" style="margin-right: 0; margin-left: 0; background: #111; color: white; padding: 10px;">
+        <ul class="col-md-4 company-details">
+          <li><img class="logo" width="170px" src="https://plumbingpatrol.com/public/assets/images/logo.png"></li>
+          <li><h3>Plumbing Patrol</h3></li>
+        </ul>
+        <div class="col-md-8 pull-right">
+          <ul class="right_cont">
+            <li class="home_ico"><a href="#" id="btn-satellite"><img width="36px" src="images/satellite.svg"></a></li>
+            <li style="margin-right: 25px;"><p><span>Lat:</span> 22.714191284059304<br><span>Long:</span> 75.87191125166424</p></li>
+            <li class="home_ico"><a href="#" data-toggle="modal" data-target="#USBModal" id="btn-usb"><img width="25px" src="images/pendrive.svg"></a></li>
+            <li class="device_connect"><a href="#" data-toggle="modal" data-target="#DeviceModal" id="btn-device"><img width="35px" src="images/device.svg"></a></li>
+            <li class="mobwifi"><a href="#" data-toggle="modal" data-target="#WiFiModal" id="btn-wifi"><img src="images/mob-wifi.svg"></a></li>
+            <li class="bluetooth"><a href="#" data-toggle="modal" data-target="#BluetoothModal" id="btn-bluetooth"><i class="fa fa-bluetooth-b"></i></a></li>
+            <li class="battery"><p><i class="fa fa-battery-half"></i><br><span style="font-size: 15px; position: relative; top: -6px;">43%</span></p></li>
+            <li class="dt-sec"><span>31-03-22<br>11:25:35</span></li>
+            <li><p class="p-by">Snake Eye</p></li>
+          </ul>
+        </div>
+      </div>
+      <div id="videoContainer">
+        <video id="videoElement" autoplay playsinline muted></video>
+        <img id="fallbackGif" src="images/seye_new.gif" alt="Fallback" />
+      </div>
+    </div>
+  </div>
+  <script src="../static/js/webrtc_player.js"></script>
+</body>
+</html>

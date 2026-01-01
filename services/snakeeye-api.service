@@ -1,0 +1,13 @@
+[Unit]
+Description=SnakeEye API
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=pi
+WorkingDirectory=/opt/snakeeye/utzo_camera_api
+ExecStart=/opt/snakeeye/venv/bin/python3 run.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
