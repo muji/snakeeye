@@ -19,6 +19,10 @@ chmod +x $BASE/bin/snakeye
 
 sudo -u $APP_USER python3 -m venv $VENV
 sudo -u $APP_USER $VENV/bin/pip install -r $BASE/utzo_camera_api/requirements.txt
+cp -f "${SERVICES_DIR}/snakeeye-gui.service" /etc/systemd/system/
+systemctl daemon-reload
+systemctl enable snakeeye-gui.service
+systemctl restart snakeeye-gui.service || true
 
 cp services/*.service /etc/systemd/system/
 cp "$ROOT_DIR/services/"*.service /etc/systemd/system/
